@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Tavola Italiana</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f1ee;
+      color: #333;
+    }
+    header {
+      background-color: #7c3f3f;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #a0522d;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+      font-size: 2.5rem;
+    }
+    .content {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .menu-item {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #7c3f3f;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>La Tavola Italiana</h1>
+    <p>Authentic Italian Cuisine - 5 Stars Dining Experience</p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#appetizers">Appetizers</a>
+    <a href="#dinner">Dinner</a>
+    <a href="#desserts">Desserts</a>
+    <a href="#drinks">Drinks</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section class="hero">
+    <div>Fresh, Homemade, Italian</div>
+  </section>
+
+  <section class="content" id="about" style="padding-top: 80px;">
+    <h2>About Us</h2>
+    <p>Welcome to La Tavola Italiana — where the heart of Italy meets the table. We bring generations of Italian family recipes to life using only fresh, locally-sourced ingredients. Enjoy an unforgettable dining experience with homemade pasta, wood-fired pizza, and fine wines.</p>
+  </section>
+
+  <section class="content" id="appetizers" style="padding-top: 80px;">
+    <h2>Appetizers</h2>
+    <div class="menu">
+      <div class="menu-item">
+        <h3>Bruschetta - $9</h3>
+        <p>Toasted baguette topped with tomatoes, garlic, basil, and olive oil.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Caprese Salad - $11</h3>
+        <p>Fresh mozzarella, vine tomatoes, basil, and balsamic glaze.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Calamari Fritti - $13</h3>
+        <p>Crispy fried calamari served with marinara dipping sauce.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Garlic Breadsticks - $7</h3>
+        <p>Oven-baked breadsticks brushed with garlic butter and herbs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content" id="dinner" style="padding-top: 80px;">
+    <h2>Dinner Entrees</h2>
+    <div class="menu">
+      <div class="menu-item">
+        <h3>Chicken Parmesan - $18</h3>
+        <p>Breaded chicken breast topped with marinara and melted mozzarella, served with spaghetti.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Fettuccine Alfredo - $17</h3>
+        <p>Fettuccine pasta tossed in rich and creamy Alfredo sauce. Add chicken +$4 or shrimp +$6.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Ravioli al Formaggio - $16</h3>
+        <p>Cheese-filled ravioli in a tomato basil sauce topped with parmesan.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Veal Marsala - $21</h3>
+        <p>Pan-seared veal with mushrooms in Marsala wine sauce served over linguine.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content" id="desserts" style="padding-top: 80px;">
+    <h2>Desserts</h2>
+    <div class="menu">
+      <div class="menu-item">
+        <h3>Tiramisu - $8</h3>
+        <p>Espresso-soaked ladyfingers layered with mascarpone cream and cocoa powder.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Cannoli - $6</h3>
+        <p>Crispy pastry shells filled with sweet ricotta cream and chocolate chips.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Limoncello Cake - $7</h3>
+        <p>Light lemon cake soaked in limoncello syrup and layered with lemon cream.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content" id="drinks" style="padding-top: 80px;">
+    <h2>Beverages</h2>
+    <div class="menu">
+      <div class="menu-item">
+        <h3>Italian Red Wine (House) - $9 glass</h3>
+        <p>Full-bodied Chianti with notes of cherry and spice.</p>
+      </div>
+      <div class="menu-item">
+        <h3>San Pellegrino Sparkling Water - $4</h3>
+        <p>Premium sparkling mineral water from Italy.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Espresso - $3</h3>
+        <p>Freshly brewed shot of rich Italian espresso.</p>
+      </div>
+      <div class="menu-item">
+        <h3>House Lemonade - $4</h3>
+        <p>Fresh-squeezed lemon juice with cane sugar and mint.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content" id="contact" style="padding-top: 80px;">
+    <h2>Contact Us</h2>
+    <p><strong>Owner:</strong> Giovanni De Luca</p>
+    <p><strong>Email:</strong> giovanni@latavolaitaliana.com</p>
+    <p><strong>Phone:</strong> (555) 123-4567</p>
+    <p><strong>Address:</strong> 123 Pasta Lane, Newark, NJ 07102</p>
+    <p><strong>Hours:</strong> Mon–Sun, 11:00 AM – 10:00 PM</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 La Tavola Italiana. All rights reserved. Designed by Emorale222</p>
+  </footer>
+</body>
+</html>
